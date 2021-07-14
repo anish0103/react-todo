@@ -1,0 +1,44 @@
+.inputitem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 115px;
+    animation-duration: 1s;
+    animation-name: animation;
+}
+
+@keyframes animation {
+    0% {
+       opacity: 0;
+       transform: translateY(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ }
+
+ @media screen and (max-width: 480px) {
+   .inputitem {
+      flex-direction: column;
+      margin-top: 40px;
+   }
+}
+
+@media screen and (max-width: 360px) {
+   .inputitem {
+      flex-direction: column;
+      margin-top: 40px;
+      position: relative;
+      left: 0.5rem;
+   }
+}
+@media screen and (max-width: 325px) {
+   .inputitem {
+      flex-direction: column;
+      margin-top: 40px;
+      position: relative;
+      left: 1.8rem;
+   }
+}

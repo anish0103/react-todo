@@ -1,0 +1,19 @@
+.ulcontainer {
+    display: flex;
+    flex: 1;
+}
+
+.ul {
+    margin: auto;
+}
+
+/* @media screen and (max-width: 480px) {
+    .ulcontainer{
+        display: flex;
+        flex: 1;
+        border-color: black;
+    }
+    .ul {
+        margin: auto;
+    }
+ } */
