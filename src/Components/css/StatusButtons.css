@@ -1,0 +1,34 @@
+.statusbutton-maincontainer {
+  padding: 5px 0;
+  width: 100%;
+}
+
+.nonactivebutton {
+  border: none;
+  outline: none;
+  width: fit-content;
+  margin-right: 15px;
+  margin-left: 5px;
+  padding: 5px 0;
+  color: #646464;
+  background-color: transparent;
+}
+
+.activebutton {
+  border: none;
+  outline: none;
+  width: fit-content;
+  margin-right: 15px;
+  margin-left: 5px;
+  padding: 5px 0;
+  color: #246bfb;
+  border-bottom: 2px solid #246bfb;
+  background-color: transparent;
+}
+
+.activebutton:hover,
+.nonactivebutton:hover {
+  color: #246bfb;
+  cursor: pointer;
+  border-bottom: 2px solid #246bfb;
+}

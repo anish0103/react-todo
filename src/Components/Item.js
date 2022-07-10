@@ -1,13 +1,30 @@
+import Delete from './Images/delete.png'
+import Complete from './Images/complete.png'
 import './css/item.css';
 
-const Item = (Probs) => {
-
+const Item = (props) => {
+    
     const removeitem = () => {
-        Probs.removeitem(Probs.id, Probs.index);
+        props.removeitem(props.id, props.index);
+    }
+    const updateitem = () => {
+        props.updateitem(props.id, props.index);
     }
 
     return (
-            <li className='item animation' key={Probs.index} id={Probs.id} onClick={removeitem} >{Probs.data.des}</li>
+        <div className='itemelement' key={props.index} id={props.id} >
+            <div className={props.data.status === "Complete" ? "itemtext completedtext" : "itemtext"}>
+                {props.data.value}
+            </div>
+            <div>
+                <button className='completebutton' onClick={updateitem}>
+                    <img alt='complete' src={Complete} />
+                </button>
+                <button className='deletebutton' onClick={removeitem}>
+                    <img alt='delete' src={Delete} />
+                </button>
+            </div>
+        </div>
     )
 };
 

@@ -1,44 +1,30 @@
 .inputitem {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    height: 115px;
-    animation-duration: 1s;
-    animation-name: animation;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-@keyframes animation {
-    0% {
-       opacity: 0;
-       transform: translateY(-20px);
-    }
-    100% {
-       opacity: 1;
-       transform: translateY(0);
-    }
- }
-
- @media screen and (max-width: 480px) {
-   .inputitem {
-      flex-direction: column;
-      margin-top: 40px;
-   }
+.inputitem input {
+  padding: 10px;
+  transition: 0.4s;
+  border: 1px solid #646464;
+  border-radius: 5px;
+  flex: 1;
+  outline: none;
 }
 
-@media screen and (max-width: 360px) {
-   .inputitem {
-      flex-direction: column;
-      margin-top: 40px;
-      position: relative;
-      left: 0.5rem;
-   }
+.inputitem button {
+  padding: 4px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #246bfb;
+  color: white;
+  margin-left: 12px;
 }
-@media screen and (max-width: 325px) {
-   .inputitem {
-      flex-direction: column;
-      margin-top: 40px;
-      position: relative;
-      left: 1.8rem;
-   }
+
+.inputitem input:focus {
+  border: 1px solid #246bfb;
+  background-color: white;
+  cursor: text;
 }

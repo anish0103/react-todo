@@ -1,7 +1,7 @@
 import InputItem from './Components/InputItem';
 import ShowItem from './Components/ShowItem';
 import { useState } from 'react';
-import './Components/css/msg.css';
+// import './Components/css/msg.css';
 
 const App = () => {
     const [list, setlist] = useState([]);
